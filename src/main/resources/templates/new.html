@@ -7,24 +7,24 @@
 </head>
 <body>
 <form th:method="POST" th:action="@{/admin}" th:object="${user}">
-    <label for="username"> Enter name: </label>
+    <label for="username"> __Enter name: </label>
     <input type="text" th:field="*{username}" id="username"/>
     <br/>
-    <label for="surname"> Enter surname: </label>
+    <label for="surname"> __Enter surname: </label>
     <input type="text" th:field="*{surname}" id="surname"/>
     <br/>
-    <label for="email"> Enter email: </label>
+    <label for="email"> __Enter email: </label>
     <input type="text" th:field="*{email}" id="email"/>
     <br/>
-    <label for="password"> Enter password: </label>
+    <label for="password"> __Enter password: </label>
     <input type="text" th:field="*{password}" id="password"/>
     <br/>
-    <input type="submit" value="Create"/>
+    <input type="submit" value="__Create"/>
 
 </form>
 <br>
 <form action="#" th:action="@{/logout}" method="get">
-    <input type="submit" value="exit"/>
+    <input type="submit" value="__exit"/>
 </form>
 </body>
 </html>
